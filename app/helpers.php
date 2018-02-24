@@ -4,7 +4,7 @@ if (! function_exists("page_title")) {
 
 	function page_title($titre)
 	{
-		$titreBase = "Liste des artisants";
+		$titreBase = config("app.name")." - Liste des artisants";
 
 		if ($titre === "") 
 		{
