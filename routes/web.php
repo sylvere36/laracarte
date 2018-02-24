@@ -12,4 +12,7 @@
 */
 
 Route::get('/', "StaticPageController@home")->name('root_path');
+
 Route::get('/about', "StaticPageController@about")->name('about_path');
+
+Route::get('/contact', "ContactsController@create")->name('contact_path');
