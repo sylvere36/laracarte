@@ -14,5 +14,15 @@ if (! function_exists("page_title")) {
 			return $titre . ' | ' . $titreBase;
 		}
 	}
+
+}
+
+//Pour mettre les classes actives aux pages
+if (! function_exists("root_active_page")) {
+
+	function root_active_page($route)
+	{
+		return Route::is($route) ? "active" : "";
+	}
 	
 }
